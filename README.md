@@ -75,7 +75,7 @@ a catalogue rather than separate machines.
 ## Install
 
 ```sh
-rom-hub plugin install https://git.moveweight.com/BlizzHacker/romarr-plugin-emuparadise --ref v0.1.0
+rom-hub plugin install https://git.moveweight.com/BlizzHacker/rom-hub-emuparadise --ref v0.1.0
 rom-hub search "contra" --platform nes
 ```
 
@@ -93,7 +93,7 @@ To list it in ROMarr's **Hub → Plugins** catalogue:
 
 ```sh
 rom-hub catalog add moveweight-emuparadise \
-  https://git.moveweight.com/BlizzHacker/romarr-plugin-emuparadise/raw/tag/v0.1.0/catalog/plugins.json
+  https://git.moveweight.com/BlizzHacker/rom-hub-emuparadise/raw/tag/v0.1.0/catalog/plugins.json
 rom-hub catalog refresh
 ```
 
