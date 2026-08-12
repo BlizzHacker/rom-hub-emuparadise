@@ -1,0 +1,37 @@
+{
+  "catalog_version": "1",
+  "updated": "2026-08-12",
+  "plugins": [
+    {
+      "slug": "emuparadise",
+      "name": "EmuParadise",
+      "author": "MoveWeight",
+      "repository": "https://git.moveweight.com/BlizzHacker/romarr-plugin-emuparadise",
+      "install": "https://git.moveweight.com/BlizzHacker/romarr-plugin-emuparadise",
+      "download": "https://git.moveweight.com/BlizzHacker/romarr-plugin-emuparadise/archive/v0.1.0.tar.gz",
+      "version": "0.1.0",
+      "ref": "v0.1.0",
+      "updated": "2026-08-12",
+      "rpp_version": "1",
+      "capabilities": ["search"],
+      "platforms": [
+        "3do", "acpc", "amiga", "amiga-cd32", "apple2", "arcade", "atari-st",
+        "atari2600", "atari5200", "atari7800", "atari8bit", "c64", "dc",
+        "fds", "gamegear", "gb", "gba", "gbc", "genesis-slash-megadrive",
+        "jaguar", "lynx", "n64", "nds", "neo-geo-cd", "nes", "ngc", "pc-fx",
+        "philips-cd-i", "ps2", "psp", "psx", "saturn", "sega32", "segacd",
+        "sharp-x68000", "sms", "snes", "turbografx-16-slash-pc-engine-cd",
+        "turbografx16--1", "virtualboy", "wii", "wonderswan",
+        "wonderswan-color", "xbox", "zxs"
+      ],
+      "network": ["emuparadise.me", "www.emuparadise.me"],
+      "status": "caveat",
+      "search_only": true,
+      "key_required": false,
+      "in_tree": false,
+      "description": "METADATA ONLY. Searches EmuParadise's catalogue for titles, regions and sizes. EmuParadise stopped distributing game files in 2018, so this provider cannot download and does not pretend to.",
+      "terms": "This provider reads only the metadata EmuParadise publishes on its own search page. It downloads nothing -- there is nothing there to download. It grants no redistribution rights; operators are responsible for using it in accordance with applicable law and the source's terms.",
+      "comments": "Search-only, and not by design choice: verified on 2026-08-12 that every download page ends with 'This game is unavailable' (checked on Castlevania, Contra and Final Fantasy). The browse tree is healthy and the download chrome still renders, which makes the site easy to mistake for a working source -- so every result is marked downloadable:false. 52 of 66 sections map to a ROMarr platform; the other 14 are counted and skipped with a stated reason. Mapping is keyed on the numeric section id, not the display name."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[plugin]
+slug        = "emuparadise"
+name        = "EmuParadise"
+version     = "0.1.0"
+rpp_version = "1"
+license     = "MIT"
+
+# `search` only, and this one is not a design trade -- it is the site.
+#
+# EmuParadise stopped distributing game files in 2018. Its browse tree is
+# healthy and its download pages still render the whole "preparing your
+# download" flow, but every one of them ends with "This game is unavailable".
+# Verified on three separate titles; see the README.
+#
+# So there is no `importer`: a download capability here would refuse every
+# call it ever received, which is worse than not offering one. And no
+# `stream`: EmuParadise hosts no player.
+[capabilities]
+search = "emuparadise.search:Search"
+
+[permissions]
+network  = ["emuparadise.me", "www.emuparadise.me"]
+romm_api = []
+
+[config]
+collection = { type = "str", default = "EmuParadise" }
