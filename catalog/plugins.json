@@ -29,7 +29,7 @@
       "search_only": true,
       "key_required": false,
       "in_tree": false,
-      "description": "METADATA ONLY. Searches EmuParadise's catalogue for titles, regions and sizes. EmuParadise stopped distributing game files in 2018, so this provider cannot download and does not pretend to.",
+      "description": "METADATA ONLY. Searches titles, regions and sizes, with matching ROMarr Capture support for rendered search rows. EmuParadise stopped distributing game files in 2018.",
       "terms": "This provider reads only the metadata EmuParadise publishes on its own search page. It downloads nothing -- there is nothing there to download. It grants no redistribution rights; operators are responsible for using it in accordance with applicable law and the source's terms.",
       "comments": "Search-only, and not by design choice: verified on 2026-08-12 that every download page ends with 'This game is unavailable' (checked on Castlevania, Contra and Final Fantasy). The browse tree is healthy and the download chrome still renders, which makes the site easy to mistake for a working source -- so every result is marked downloadable:false. 52 of 66 sections map to a ROMarr platform; the other 14 are counted and skipped with a stated reason. Mapping is keyed on the numeric section id, not the display name."
     }

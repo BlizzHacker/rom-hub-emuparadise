@@ -5,6 +5,7 @@ An RPP v1 provider that searches [EmuParadise](https://www.emuparadise.me).
 | Capability | Status |
 |---|---|
 | `search` | Implemented — the site's own `GET /roms/search.php` endpoint |
+| ROMarr Capture | Implemented for rendered search rows |
 | `importer` | **Absent — EmuParadise no longer hosts game files** |
 | `stream` | **Absent — EmuParadise hosts no player** |
 
@@ -39,6 +40,11 @@ What this provider is good for: EmuParadise's catalogue is large, well
 labelled and carries per-title regions and sizes, so it is a reasonable
 **metadata and discovery** source. Use it to find out what exists and what a
 release is called. Get the file somewhere else.
+
+ROMarr Capture exposes the same rendered search rows in the extension's local
+catalogue, so EmuParadise remains visible beside browser-assisted sources. It
+does not turn the site's surviving download chrome into a file that no longer
+exists.
 
 ## Platforms
 
@@ -111,7 +117,7 @@ A non-200 — 403, 429, 503 — returns no results and is **not retried**.
 ROM_HUB_SRC=/opt/rom-hub/src PYTHONPATH=/opt/romarr pytest tests/ -q
 ```
 
-112 passing. `PYTHONPATH` to ROMarr is what makes the platform-slug checks run
+116 passing. `PYTHONPATH` to ROMarr is what makes the platform-slug checks run
 rather than skip.
 
 ## Terms
